@@ -5,44 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/83c6feef02.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Inicio del Header -->
     
     <header class="header">
-        <a class="link-logo" href="../index.html">
-            <picture>
-                <img src="../paginas/recursos/logopsicoterapia.png" alt="" width="200" height="100">
-            </picture>
-        </a>
-        <nav class="nav-bar">
-            <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="../index.html">Inicio</a></li>
-                <li class="menu-item"><a class="menu-link" href="./sobremi.html">Conoceme</a></li>
-                <li class="menu-item"><a class="menu-link" href="./servicios.html">Servicios</a></li>
-                <li class="menu-item"><a class="menu-link" href="./blog.html">Blog</a></li>
-                <li class="menu-item"><a class="menu-link" href="./formulario.html">Contactanos</a></li>
-            </ul>
-        </nav>
+            <a class="link-logo" href="../index.html">
+                <picture class="header__logo">
+                    <img src="../recursos/logopsicoterapia.png" alt="" width="200" height="100">
+                </picture>
+            </a>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="../index.html">Inicio</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./sobremi.html">Conoceme</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./servicios.html">Servicios</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./blog.html">Blog</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./formulario.html">Contactanos</a></li>
+                </ul>
+            </nav>
     </header>
-
-   
     <!-- Fin del Header -->
 
     <!-- Inicio del Main -->
-    <div>
-        <main>
-            <h1>Blog</h1>
-        </main>
+    <section class="intro-blog">
+        <div class="box-blog-text">
+            <p class="blog-text">En este espacio encontraras información relacionada a las dinamicas familiares, pautas de crianza y relaciones sanas.</p>
+        </div>
+    </section>
+    <section class="articulos">
+        <div class="box-articulos">
+            <a class="text-decoration" href="#">
+                <img src="../recursos/queesterapiafamiliar.png"alt="" width="300" height="300">
+                <h2 class="text-articulos">Que es la psicoterapia familiar</h2>
+            </a>
+            
+        </div>
+        <div class="box-articulos">
+            <a class="text-decoration" href="#">
+                <img src="../recursos/ejercicosemociones.png" alt="" width="300" height="300">
+                <h2 class="text-articulos">Ejercicos para fortalecer el reconocimiento emocional</h2>
+            </a>
+            
+        </div>
+        <div class="box-articulos">
+            <a class="text-decoration" href="#">
+                <img src="../recursos/relacionsana.png" alt="" width="300" height="300">
+                <h2 class="text-articulos">Como fortalecer tus relaciones</h2>
+            </a>
+            
 
-    </div>
-    
+        </div>
+    </section>
     <!-- Fin del Main -->
 
     <!-- Inicio del Footer -->
-    <footer>
-        <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <picture>
+                    <a href="#">
+                        <img src="../recursos/logofooter.png" alt="" width="200" height="150">
+                    </a>
+                </picture>
+            </div>
+            <div class="box">
+                <h2>Contacto</h2>
+                <br>
+                <p>Telefono: +57 3176356706</p>
+                <p>E-mail: unemail@gmail.com</p>
+                <p>Direccion: Calle 16 #34-28</p>      
+            </div>
+            <div class="box">
+                <h2>Sigueme</h2>
+                <br>
+                <div class="redes-sociales"></div>
+                    <a href="#" class="fa fa-facebook fa-2x color-icon"></a> &nbsp;
+                    <a href="#" class="fa fa-instagram fa-2x color-icon"></a> &nbsp;
+                    <a href="#" class="fa fa-youtube fa-2x color-icon"></a> &nbsp;
+                </div>
+            </div>
+
+        <div class="grupo-2">
+            <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+        </div>
     </footer>
     <!-- Fin del Footer -->
 </body>

@@ -5,65 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicoterapia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/83c6feef02.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Inicio del Header -->
-   
     <header class="header">
-        <a class="link-logo" href="../index.html">
-            <picture class="header__logo">
-                <img src="../paginas/recursos/logopsicoterapia.png" alt="" width="200" height="100">
-            </picture>
-        </a>
-    <nav class="nav-bar">
-        <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="../index.html">Inicio</a></li>
-            <li class="menu-item"><a class="menu-link" href="./sobremi.html">Conoceme</a></li>
-            <li class="menu-item"><a class="menu-link" href="./servicios.html">Servicios</a></li>
-            <li class="menu-item"><a class="menu-link" href="./blog.html">Blog</a></li>
-            <li class="menu-item"><a class="menu-link" href="./formulario.html">Contactanos</a></li>
-        </ul>
-    </nav>
+            <a class="link-logo" href="../index.html">
+                <picture class="header__logo">
+                    <img src="../recursos/logopsicoterapia.png" alt="" width="200" height="100">
+                </picture>
+            </a>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="../index.html">Inicio</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./sobremi.html">Conoceme</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./servicios.html">Servicios</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./blog.html">Blog</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./formulario.html">Contactanos</a></li>
+                </ul>
+            </nav>
     </header>
     <!-- Fin del Header -->
 
     <!-- Inicio del main -->
-    <main>
-        <h1>Formulario</h1>
-        <form action="">
-            <fieldset>
-                <legend>Agenda aqui tu cita</legend>
+    <main class="main-formulario">
+        <section>
+            <div class="box-intro-formulario">
+                <p class="formulario-intro-text">Ir a terapia te brinda la posibildiad de trabajar en ti para que tus relaciones afectivas sean sanas</p>
+            </div>
+        </section>
 
-                <label for="">Nombre:</label>
-                <input type="nombre" name="" id="">
+        <section>
+            <div class="box-tittle-formulario">
+                <h1 class="tittle-1">AGENDA AQUI TU CITA</h1>
+            </div>
+        </section>
+    
+        <section class="formulario">
+            <div class="box-formulario">
+                <form action="">
+                    
+                        <legend class="tittle"></legend>
+        
+                        <label class="text-formulario" for="">Nombre:</label>
+                        <input class="cajon-formulario" type="nombre" name="" id="">
+        
+                        <label class="text-formulario" for="">Apellido:</label>
+                        <input class="cajon-formulario" type="apellido" name="" id="">
 
-                <br><br>
+                        <label class="text-formulario" for="">Telefono:</label>
+                        <input class="cajon-formulario" type="telefono" name="" id="" >
 
-                <label for="">Apellido:</label>
-                <input type="apellido" name="" id="">
+                        <label class="text-formulario" for="">Correo electrónico:</label>
+                        <input class="cajon-formulario" type="correo electronico" name="" id="" >
+                        
+                        <input class="botton" type="submit" value="Contactame">
+            </div>
 
-                <br><br>
-
-                <label for="">Telefono</label>
-                <input type="telefono" name="" id="" placeholder="+573196715931">
-
-                <br><br>
-
-                <label for="">Correo electrónico:</label>
-                <input type="correo electronico" name="" id="" placeholder="some@email.com">
-
-                <br><br>
+        <section>
+            <div class="box-adicional">
+                <h3 class="titulo-adicional">TU OPINION ES IMPORTANTE</h3>
+                <p class="text-adicional">Cuéntanos tu experiencia, solicitud o inconformidad con la atención prestada, pronto nos pondremos en contacto.</p>
+            
+                <label class="text-formulario" for="">Mensaje:</label>
+                <input class="cajon-formulario-2" type= "mensaje" name="" id="">
+                <input class="botton" type="submit" value="Enviar">
                 
-                <input type="submit" value="Enviar informacion">
-                <input type="reset">
-            </fieldset>
+            </div>
+        </section>
     </main>
+            
     <!-- Fin del Main -->
 
     <!-- Inicio del Footer -->
-    <footer>
-        <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <picture>
+                    <a href="#">
+                        <img src="../recursos/logofooter.png" alt="" width="200" height="150">
+                    </a>
+                </picture>
+            </div>
+            <div class="box">
+                <h2>Contacto</h2>
+                <br>
+                <p>Telefono: +57 3176356706</p>
+                <p>E-mail: unemail@gmail.com</p>
+                <p>Direccion: Calle 16 #34-28</p>      
+            </div>
+            <div class="box">
+                <h2>Sigueme</h2>
+                <br>
+                <div class="redes-sociales"></div>
+                    <a href="#" class="fa fa-facebook fa-2x color-icon"></a> &nbsp;
+                    <a href="#" class="fa fa-instagram fa-2x color-icon"></a> &nbsp;
+                    <a href="#" class="fa fa-youtube fa-2x color-icon"></a> &nbsp;
+                </div>
+            </div>
+
+        <div class="grupo-2">
+            <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+        </div>
     </footer>
     <!-- Fin  del Footer -->
 </body>
