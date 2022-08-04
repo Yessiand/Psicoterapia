@@ -1,0 +1,77 @@
+#main-index {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:repeat(5,auto);
+}
+.slider {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: span 6; 
+    background-image: url('../recursos/background2.png');
+    @include tamanios (70vh,100wh,);
+    background-repeat: no-repeat;
+    background-size: cover;
+        &__text { 
+            font-size: 38px;
+            text-align: center;
+            margin-top: 30vh;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            color: rgb(0, 0, 0);
+            font-family: $font-principal;
+        }
+}      
+.divider {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 6;
+    @include tamanios (120px,100%);
+    background-color: map-get($backgraund-color, alternative);
+    @include flex (null,null,center,center);
+        &__text {
+            @include flex (null,null,center,center);
+            text-align: center;
+            margin-top: 5vh;
+            color: rgb(0, 0, 0);
+            font-family: $font-principal;
+            font-size: $text-xsmall;
+        }
+        &__div {
+            width: 80%;
+}
+}
+.profile {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    background-color: $alternative;
+    width: 200%;
+    margin-left: 20%;
+    padding: 10%;
+    font-size: $text-large; 
+    font-family: $font-principal;
+    @include flex (null,null,center,center);
+    margin: 10px;
+    &__text h2 {
+        color:map-get($backgraund-color,primary);
+        text-align: center;
+}
+}
+.services {
+    grid-row: span 1;
+    grid-column: span 6;
+    @include flex (flex,null,center,center);
+}
+.box-service {
+    width: 20%;
+    padding: 50px;
+    img {
+    @include tamanios (100px,100px);
+    margin-left: 20px;
+}
+    h2 {
+    font-family: $font-principal;
+    font-size: $text-large; 
+}
+}

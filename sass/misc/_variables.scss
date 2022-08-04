@@ -1,0 +1,42 @@
+/* Colores */
+$primary: purple;
+$secondary: #6F3581;
+$alternative: rgba(233, 198, 240, 0.8);
+$third: #d49ef1;
+$text-color: black;
+$text-secundary: #521677e0;;
+
+/*Fuentes*/
+$font-principal: "poppins", sans-serif;
+
+/*Espaciados*/
+$spacing-xsmall: 1rem;
+
+/*Font-sice*/
+$text-xsmall: 14px;
+$text-small: 16px;
+$text-large: 18px;
+$text-medium: 24px;
+
+/*MIXINS*/
+
+@mixin tamanios ($altura,$anchura){
+    height: $altura;
+    width: $anchura;
+}
+@mixin flex ($display,$direction,$justify,$align){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/*MAP*/
+$backgraund-color:(
+primary: #634774,
+secundary: #d49ef1,
+third: #6F3581,
+alternative: #b34df37a
+)
+
+/*EXTEND*/

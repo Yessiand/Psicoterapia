@@ -1,0 +1,43 @@
+header {
+    background-color: #6F3581;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var($spacing-xsmall);
+    top: 0px;
+
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        color: white;
+
+        &__item {
+            height: 100%;
+            padding: 20px;
+        }
+
+        &__link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0%;
+            transition: all 300ms ease;
+        }
+
+        &__item:hover {
+            background-color: rgb(233, 198, 250);
+            color: black;
+        }
+    }
+
+    &__item:hover a {
+        color: black;
+    }
+}
+
+.color_nav {
+    background-color: #460863;
+    font-size: 18px;
+    position: sticky;
+}

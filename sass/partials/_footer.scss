@@ -1,0 +1,50 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 100px;
+    padding-top: 3%;
+    font-size: 14px;
+    background-image: linear-gradient(
+        180deg,
+    rgb(102, 0, 128),rgb(290, 141, 243));
+
+    &__logo {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        width: 170px;
+        margin-left: 11%;
+        }
+    &__contacto {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        margin-left: 35%;
+        color: #ffffff;
+        font-family: var($font-principal);
+        line-height: 29px;
+        }
+    &__redes {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        margin-left: 40%;
+        color: #ffffff;
+        font-family:var($font-principal);
+        }
+    &__copyright {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column: span 3;
+        height: 5px;
+        margin-left: 75%;
+        color: var($text-color);
+        font-family: var($font-principal);
+        font-size: 13px;
+        }
+}
+
+.footer__image {
+    width: 300px;
+    height: 200px;
+}
