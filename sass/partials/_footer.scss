@@ -8,8 +8,6 @@ footer {
         180deg,
     rgb(102, 0, 128),rgb(290, 141, 243));
 
-
-
     &__logo {
         grid-row-start: 1;
         grid-row-end: 2;
@@ -24,7 +22,6 @@ footer {
         margin-left: 35%;
         color: #ffffff;
         font-family: var($font-principal);
-        font-size: 40px;
         line-height: 29px;
         }
     &__redes {
@@ -34,18 +31,20 @@ footer {
         margin-left: 40%;
         color: #ffffff;
         font-family:var($font-principal);
-        font-size: 14px;
         }
-
     &__copyright {
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column: span 3;
         height: 5px;
         margin-left: 75%;
-        
         color: var($text-color);
         font-family: var($font-principal);
         font-size: 13px;
         }
+}
+
+.footer__image {
+    width: 300px;
+    height: 200px;
 }

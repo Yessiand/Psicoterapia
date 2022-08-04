@@ -1,0 +1,51 @@
+.sobremi {
+    margin-top: 8%;
+    width: 90%;
+}
+.intro-conoceme {
+    background-image: url('../recursos/imagenintrosobremi.png');
+    height:30vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex (flex,null,center,flex-end);
+    margin-right: 20%;
+h1 {
+    font-size: 24px;
+    font-family: $font-principal;
+    color: $text-secundary;
+    margin: 0%;
+}
+h4 {
+    font-size: 24px;
+    font-family: $font-principal;
+    color: $text-secundary;
+    margin: 0%;
+}
+p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: rgb(0, 0, 0);
+    font-family: $font-principal;
+    margin-bottom: 30px;
+}
+}
+.box-conoceme-1 {
+    background-color:map-get($backgraund-color,primary);
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 30px;
+    margin-block-end: 5%;
+    border-radius: 20px;
+}
+.parrafo {
+    font-size: $text-small;
+    font-family: $font-principal;
+}
+.parrafo-2 {
+    font-size: 13px;
+    font-family: $font-principal;
+}
