@@ -15,13 +15,12 @@
     <script src="https://kit.fontawesome.com/83c6feef02.js" crossorigin="anonymous"></script>
     <title>Psicologia pagina de inicio</title>
 </head>
-
 <body>
     <!-- Inicio del header -->
     <header class="header">
         <a class="link-logo" href="./index.html">
             <picture class="header__logo">
-                <img src="./recursos/logopsicoterapia.png" alt="" width="150" height="100">
+                <img src="./recursos/logopsicoterapia.png" alt="">
             </picture>
         </a>
     </header>
@@ -55,91 +54,123 @@
     </nav>
     <!-- Fin del header -->
 
-    <!-- Inicio del cuerpo de la pagina -->
-    <main id="main-index">
-        <section class="slider">
-            <p class="slider__text">"El amor comienza cuando una persona siente que las necesidades de otra son tan
-                importantes como las suyas propias."<br> - Harry S. Sulliva</p>
-        </section>
 
-        <section class="divider">
-            <p class="divider__text">Apuesto por el bienestar individual y de pareja de mis pacientes, posibilitando un
-                espacio de comunicación asertiva para solucionar las dificultades que se presentan dentro de una
-                relacion amorosa o dentro de un sistema familiar .</p>
-        </section>
-
-        <section class="profile">
-            <div class="profile__text">
-                <h2>Lic. Yessica Portilla Cubillos</h2>
-                <p>Soy psicologa con enfasis en terapia sistemica y de pareja. Tengo una amplia experiencia en
-                    diferentes tipos de intervenciones como terapia humanístico existencial y terapia cognitivo
-                    conductual.</p>
-            </div>
-        </section>
-
-        <articule class="services">
-            <div class="box-service uno">
-                <img src="./recursos/terapia-individual.png" alt="">
-                <h2>Terapia individual</h2>
-            </div>
-            <div class="box-service  contrasted-image dos">
-                <img src="./recursos/terapia-familiar.png" alt="">
-                <h2>Terapia familiar</h2>
-            </div>
-            <div class="box-service tres">
-                <img src="./recursos/terapia-pareja.png" alt="">
-                <h2>Terapia de pareja</h2>
-            </div>
-            <div class="box-service contrasted-image cuatro">
-                <img src="./recursos/terapia-infantil.png" alt="">
-                <h2>Terapia infantil</h2>
-            </div>
-            <div class="box-service cinco">
-                <img src="./recursos/terapia-virtual.png" alt="">
-                <h2>Terapia virtual</h2>
-            </div>
-        </articule>
-    </main>
-    <!-- Fin del cuerpo de la pagina -->
-
-    <!-- Inicio del Footer -->
-    <footer>
-        <div class="footer__logo">
-            <picture>
-                <a href="#">
-                    <img src="./recursos/logopsicoterapia.png" alt="" class="footer__image">
-                </a>
-            </picture>
+<!-- Inicio del cuerpo de la pagina -->
+<!-- Inicio slider -->
+<div id="carouselExampleIndicators" class="carousel slide slider-index" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="./recursos/carusel1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./recursos/carusel2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./recursos/carusel3.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="footer__contacto">
-            <h2>Contacto</h2>
-            <br>
-            <p>Telefono: +57 3176356706</p>
-            <p>E-mail: unemail@gmail.com</p>
-            <p>Direccion: Calle 16 #34-28</p>
-        </div>
-        <div class="footer__redes">
-            <h2>Sigueme</h2>
-            <br>
-            <div class="redes-sociales">
-                <a href="#" class="fa fa-facebook fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
-                <a href="#" class="fa fa-instagram fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
-                <a href="#" class="fa fa-youtube fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
-            </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+<!-- Fin slider -->
 
-        <div class="footer__copyright">
-            <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+<main id="main-index">
+    <section class="divider">
+        <p class="divider__text">La salud mental es un estado dinámico que se ve reflejado en nuestra vida cotidiana, esto incluye la forma en que nos comportamos e interactuamos con el entorno, para ello las personas necesitan recursos emocionales, cognitivos y mentales que permitan establecer relaciones, vínculos, limites adecuados, fijar metas y objetivos. Cuidar de la salud mental ayuda a que estos recursos tan necesarios para que la vida funcione de acuerdo a los estándares de cada persona; es por ello que ir a terapia no significa tener un trastorno o problema mental, significa cuidar de nosotros y pensar en que cada persona puede tener la vida que desee y con la que se sienta a gusto.</p>
+    </section>
+
+    <section class="profile">
+        <div>
+            <h2>Lic. Yessica Portilla Cubillos</h2>
+            <p>Soy psicologa con enfasis en terapia sistemica y de pareja. Tengo una amplia experiencia en
+                diferentes tipos de intervenciones como terapia humanístico existencial y terapia cognitivo
+                conductual.</p>
         </div>
-    </footer>
-    <!-- Fin del Footer -->
-    <!-- Link javascript css -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+    </section>
+   <section class="title__fondo">
+    <div>
+        <h3>Servicios Psicoterapeuticos</h3>
+    </div>
+   </section>
+   <articule class="services">
+    <div class="box-service uno">
+        <img src="./recursos/terapia-individual.png" alt="">
+        <h2>Terapia individual</h2>
+    </div>
+    <div class="box-service dos">
+        <img src="./recursos/terapia-familiar.png" alt="">
+        <h2>Terapia familiar</h2>
+    </div>
+    <div class="box-service tres">
+        <img src="./recursos/terapia-pareja.png" alt="">
+        <h2>Terapia de pareja</h2>
+    </div>
+    <div class="box-service cuatro">
+        <img src="./recursos/terapia-infantil.png" alt="">
+        <h2>Terapia infantil</h2>
+    </div>
+    <div class="box-service cinco">
+        <img src="./recursos/terapia-virtual.png" alt="">
+        <h2>Terapia virtual</h2>
+    </div>
+</articule>
+    
+</main>
+<!-- Fin del cuerpo de la pagina -->
+
+<!-- Inicio del Footer -->
+<footer>
+    <div class="footer__logo">
+        <picture>
+            <a href="#">
+                <img src="./recursos/logopsicoterapia.png" alt="" class="footer__image">
+            </a>
+        </picture>
+    </div>
+    <div class="footer__contacto">
+        <h2>Contacto</h2>
+        <br>
+        <p>Telefono: +57 3176356706</p>
+        <p>E-mail: unemail@gmail.com</p>
+        <p>Direccion: Calle 16 #34-28</p>
+    </div>
+    <div class="footer__redes">
+        <h2>Sigueme</h2>
+        <br>
+        <div class="redes-sociales">
+            <a href="#" class="fa fa-facebook fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
+            <a href="#" class="fa fa-instagram fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
+            <a href="#" class="fa fa-youtube fa-3x" style="color: rgb(91, 18, 109)" ;></a> &nbsp;
+        </div>
+    </div>
+
+    <div class="footer__copyright">
+        <p> Copyright © 2018-2022 Psicoterapia All rights reserved. </p>
+    </div>
+</footer>
+<!-- Fin del Footer -->
+<!-- Link javascript css -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+    
 </body>
+
+
 
 </html>
