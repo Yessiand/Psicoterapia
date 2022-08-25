@@ -1,38 +1,3 @@
-.title-service {
-    flex-wrap: wrap;
-    font-size: 42px;
-    margin-top: 8%;
-    color: #460863;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(201, 54, 214, 0.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-}
-.box-circulo {
-    @include tamanios (400px,400px);
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: linear-gradient(
-    90deg, 
-    pink,rgb(177, 10, 211));
-    margin-top: 5%;
-    margin-left: 7%;
-    overflow:hidden;
-}
-.box-circulo:hover {
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    box-shadow: 0px 0px 5px 5px #9b17d8;
-    -webkit-box-shadow: 0px 0px 7px 7px #6a1283;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -webkit-transform:scale(0.9);transform:scale(0.9);
-}
-.box-intro {
-    background-image: url('../recursos/imagenintroservice.png');
-    @include tamanios (40vh,100wh);
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flex (flex,null,center,center);
-}
 .service-intro-text {
     font-size: $text-medium;
     text-align: center;
@@ -42,22 +7,46 @@
     color: rgb(0, 0, 0);
     font-family: $font-principal;
 }
-.cita {
-    font-size: $text-large;
+.box-intro {
+    background-image: url('../recursos/imagenintroservice.png');
+    @include tamanios (40vh,100wh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex (flex,null,centesr,center);
 }
-.text-circulo-h {
-    margin-left: 29%; 
-    font-size: $text-large;
-    margin-top: 15%;
-    font-family: $font-principal;
+.title-service {
+    flex-wrap: wrap;
+    font-size: 42px;
+    margin-top: 8%;
+    color: #460863;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(201, 54, 214, 0.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
-.text-circulo-p {
-    font-size: $text-small;
-    padding-top: 5%;
-    font-family: $font-principal;
-    margin-left: 18%;
-    @include flex (null,null,center,center);
-    @include tamanios (15%,60%);
+.box-circulo {
+    border-radius: 0;
+    background: linear-gradient(
+    90deg, 
+    pink,rgb(177, 10, 211));
+    margin-top: 5%;
+    margin-left: 7%;
+    padding: 0;
+    overflow:hidden;
+    h3 {
+        margin-left: 29%; 
+        font-size: $text-large;
+        margin-top: 15%;
+        font-family: $font-principal;
+        color: rgba(255, 255, 255, 0.747);
+    }
+    p {
+        font-size: $text-small;
+        padding-top: 5%;
+        font-family: $font-principal;
+        color: rgba(98, 13, 124, 0.897);   
+        margin-left: 18%;
+        font-weight: 600;
+        @include flex (null,null,center,center);
+        @include tamanios (15%,60%);
+    }
 }
 .img-circulo-1 {
     margin-top: 20%;
@@ -82,4 +71,467 @@
 }
 .center-items {
     margin-left: 19%;
+}
+/*Media 256-329 index*/
+@media (min-width: 256px) and (max-width: 329px){
+    .service-intro-text {
+        font-size: $text-small;
+        margin: 0px;
+    }
+    .box-intro {
+        @include tamanios (40vh,100wh);
+    }
+    .title-service {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    .box-circulo {
+        @include tamanios(328px,140%);
+        padding: 0;
+        margin-top: 5%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 15%;
+        margin-left: 49px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        @include tamanios(418px,85%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 10%;
+        margin-left: 5%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-2 {
+        margin-top: 10%;
+        margin-left: 5%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-3 {
+        margin-top: 10%;
+        margin-left: 5%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-4 {
+        margin-top: 10%;
+        margin-left: 5%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-5 {
+        margin-top: 10%;
+        margin-block-end: 6%;
+        margin-left: 5%;
+        @include tamanios (200px,200px);
+    }
+}
+/*Media 330-399 servicios*/
+@media (min-width: 329px)  and (max-width: 399px){
+    .service-intro-text {
+        font-size: 17px;
+        margin: 0px;
+    }
+    .box-intro {
+        @include tamanios (40vh,100wh);
+    }
+    .title-service {
+        font-size: 22px;
+        margin-top: 8%;
+        margin-left: 9px;
+    }
+    .box-circulo {
+        @include tamanios(254px,140%);
+        margin-top: 5%;
+        margin-left: -1%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 10%;
+        margin-left: 88px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        @include tamanios(418px,90%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 10%;
+        margin-left: 15%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-2 {
+        margin-top: 10%;
+        margin-left: 15%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-3 {
+        margin-top: 10%;
+        margin-left: 15%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-4 {
+        margin-top: 10%;
+        margin-left: 15%;
+        @include tamanios (200px,200px);
+    }
+    .img-circulo-5 {
+        margin-top: 10%;
+        margin-block-end: 6%;
+        margin-left: 15%;
+        @include tamanios (200px,200px);
+    }
+}
+/*Media 399-499 servicios*/
+@media (min-width: 399px) and (max-width: 499px){
+    .service-intro-text {
+        font-size: 17px;
+        margin: 0px;
+    }
+    .box-intro {
+        @include tamanios (40vh,100wh);
+    }
+    .title-service {
+        font-size: 22px;
+        margin-top: 8%;
+        margin-left: 9px;
+    }
+    .box-circulo {
+        @include tamanios(235px,140%);
+        padding: 0;
+        margin-top: 5%;
+        margin-left: -1%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 10%;
+        margin-left: 115px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        @include tamanios(418px,90%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 10%;
+        margin-left: 22%;
+        @include tamanios (210px,210px);
+    }
+    .img-circulo-2 {
+        margin-top: 10%;
+        margin-left: 22%;
+        @include tamanios (210px,200px);
+    }
+    .img-circulo-3 {
+        margin-top: 10%;
+        margin-left: 22%;
+        @include tamanios (210px,210px);
+    }
+    .img-circulo-4 {
+        margin-top: 10%;
+        margin-left: 22%;
+        @include tamanios (210px,210px);
+    }
+    .img-circulo-5 {
+        margin-top: 10%;
+        margin-block-end: 6%;
+        margin-left: 22%;
+        @include tamanios (210px,210px);
+    }
+}
+/*Media 499-575 index*/
+@media (min-width: 499px) and (max-width: 575px){
+    .service-intro-text {
+        font-size: 17px;
+        margin: 0px;
+    }
+    .box-intro {
+        @include tamanios (40vh,100wh);
+    }
+    .title-service {
+        font-size: 22px;
+        margin-top: 8%;
+        margin-left: -50px;
+    }
+    .box-circulo {
+        @include tamanios(215px,140%);
+        padding: 0;
+        margin-top: 5%;
+        margin-left: -1%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 7%;
+        margin-left: 165px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        @include tamanios(418px,90%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 10%;
+        margin-left: 26%;
+        @include tamanios (215px,215px);
+    }
+    .img-circulo-2 {
+        margin-top: 10%;
+        margin-left: 26%;
+        @include tamanios (215px,205px);
+    }
+    .img-circulo-3 {
+        margin-top: 10%;
+        margin-left: 26%;
+        @include tamanios (215px,215px);
+    }
+    .img-circulo-4 {
+        margin-top: 10%;
+        margin-left: 26%;
+        @include tamanios (215px,215px);
+    }
+    .img-circulo-5 {
+        margin-top: 10%;
+        margin-block-end: 6%;
+        margin-left: 26%;
+        @include tamanios (215px,215px);
+    }
+}
+/*Media 575-767 servicios*/ 
+@media (min-width: 575px) and (max-width: 767px){
+    .service-intro-text {
+        font-size: $text-large;
+        margin: 0px;
+    }
+    .title-service {
+        font-size: $text-xllarge;
+        margin-top: 8%;
+        margin-left: 3%;
+    }
+    .box-circulo {
+        margin-left: -1%;
+        width: 300%;
+        height: 190px;
+        margin-top: 5%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 4%;
+        margin-left: 205px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        margin-top: -15px;
+        @include tamanios(418px,95%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 5%;
+        margin-left: 29%;
+        @include tamanios (225px,225px);
+    }
+    .img-circulo-2 {
+        margin-top: 5%;
+        margin-left: 29%;
+        @include tamanios (225px,225px);
+    }
+    .img-circulo-3 {
+        margin-top: 5%;
+        margin-left: 29%;
+        @include tamanios (225px,225px);
+    }
+    .img-circulo-4 {
+        margin-top: 4%;
+        margin-left: 29%;;
+        @include tamanios (225px,225px);
+    }
+    .img-circulo-5 {
+        margin-top: 5%;;
+        margin-block-end: 6%;
+        margin-left: 29%;
+        @include tamanios (225px,225px);
+    }
+}
+/*Media 768-992 servicios*/ 
+@media (min-width: 768px) and (max-width: 992px) {
+    .service-intro-text {
+        font-size: $text-large;
+        margin: 0px;
+    }
+    .box-intro {
+        @include tamanios (40vh,100wh);
+    }
+    .title-service {
+        font-size: 22px;
+        margin-top: 8%;
+    }
+    .box-circulo {
+        width: 200%;
+        height: 330px;
+        border-radius: 29%;
+        padding: 0;
+        margin-top: 4%;
+        margin-left: 18%;
+        h3 {
+        font-size: $text-large;
+        margin-top: 12%;
+        margin-left: 42px;
+        }
+        p {
+        font-size: $text-small;
+        margin-left: 15px;
+        margin-top: -15px;
+        @include tamanios(435px,88%);
+        text-align: justify;
+        }
+    }
+    .img-circulo-1 {
+        margin-top: 17%;
+        margin-left: 26%;
+        @include tamanios (230px,230px);
+    }
+    .img-circulo-2 {
+        margin-top: 26%;
+        margin-left: 50%;
+        @include tamanios (230px,230px);
+    }
+    .img-circulo-3 {
+        margin-top: 17%;
+        margin-left: 26%;
+        @include tamanios (230px,230px);
+    }
+    .img-circulo-4 {
+        margin-top: 17%;
+        margin-left: 49%;
+        @include tamanios (230px,230px);
+    }
+    .img-circulo-5 {
+        margin-top: 17%;;
+        margin-block-end: 6%;
+        margin-left: 26%;
+        @include tamanios (230px,230px);
+    }
+}
+/*Media 992-1199 servicios*/ 
+@media (min-width: 992px) and (max-width: 1199px)  {
+    .box-circulo {
+        @include tamanios (340px,400px);
+        border-radius: 39%;
+        margin-top: 5%;
+        margin-left: 12%;
+        h3 {
+            font-size: $text-large;
+            margin-top: 17%;
+            margin-left: 79px;
+            }
+            p {
+            font-size: 15;
+            margin-left: 30px;
+            margin-top: -15px;
+            @include tamanios(110px,76%);
+            text-align: justify;
+            }
+    }
+    .box-circulo:hover {
+        box-shadow: 0px 0px 5px 5px #9b17d8;
+        -webkit-box-shadow: 0px 0px 7px 7px #6a1283;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -webkit-transform:scale(0.9);transform:scale(0.9);
+    }
+.service-intro-text {
+    margin-left: 1%;
+}
+.img-circulo-1 {
+    margin-top: 20%;
+    margin-left: 20%;
+    @include tamanios (325px,325px);
+}
+.img-circulo-2 {
+    margin-top: 27%;
+    margin-left: 20%;
+    @include tamanios (325px,325px);
+}
+.img-circulo-3 {
+    margin-top: 27%;
+    margin-left: 20%;
+    @include tamanios (325px,325px);
+}
+.img-circulo-4 {
+    margin-top: 27%;
+    margin-left: 20%;
+    @include tamanios (325px,325px);
+}
+.img-circulo-5 {
+    margin-top: 27%;;
+    margin-block-end: 6%;
+    margin-left: 20%;
+    @include tamanios (325px,325px);
+}
+}
+/*Media 1200 servicios*/ 
+@media (min-width: 1200px)  {
+    .box-circulo {
+        @include tamanios (400px,400px);
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin-top: 5%;
+        margin-left: 17%;
+            h3 {
+            font-size: 27px;
+            margin-top: 20%;
+            margin-left: 18%;
+            }
+            p {
+            font-size: $text-small;
+            margin-left: 55px;
+            margin-top: 10px;
+            @include tamanios(110px,73%);
+            text-align: center;
+            }
+            .alternative {
+                margin-left: 22%;
+            }
+            }
+    .box-circulo:hover {
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 5px 5px #9b17d8;
+        -webkit-box-shadow: 0px 0px 7px 7px #6a1283;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -webkit-transform:scale(0.9);transform:scale(0.9);
+    }
+.class-center {
+    margin-left: 485%;
+}
+.service-intro-text {
+    margin-left: 18%;
+}
+.img-circulo-1 {
+    margin-top: 27%;
+}
+.img-circulo-2 {
+    margin-top: 27%;
+    margin-left: 26%;
+}
+.img-circulo-3 {
+    margin-top: 27%;
+    margin-left: 26%;
+}
+.img-circulo-4 {
+    margin-top: 27%;
+    margin-left: 46%;
+}
+.img-circulo-5 {
+    margin-top: 27%;;
+    margin-block-end: 6%;
+    margin-left: 16%;
+}
 }

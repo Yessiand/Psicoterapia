@@ -1,23 +1,20 @@
-.sobremi {
-    margin-top: 8%;
-    width: 90%;
-}
+
 .intro-conoceme {
     background-image: url('../recursos/imagenintrosobremi.png');
-    height:30vh;
+    height:40vh;
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
     @include flex (flex,null,center,flex-end);
     margin-right: 20%;
 h1 {
-    font-size: 24px;
+    font-size: 49px;
     font-family: $font-principal;
     color: $text-secundary;
     margin: 0%;
 }
 h4 {
-    font-size: 24px;
+    font-size: 27px;
     font-family: $font-principal;
     color: $text-secundary;
     margin: 0%;
@@ -33,11 +30,15 @@ p {
     margin-bottom: 30px;
 }
 }
-.box-conoceme-1 {
-    background-color:map-get($backgraund-color,primary);
+.perfil {
     margin-top: 30px;
+p{
+    margin-top:2%;
+}
+}
+.box-conoceme-1 {
     width: 90%;
-    margin-left: 30px;
+    margin-left: 4%;
     margin-block-end: 5%;
     border-radius: 20px;
 }
@@ -45,7 +46,165 @@ p {
     font-size: $text-small;
     font-family: $font-principal;
 }
-.parrafo-2 {
-    font-size: 13px;
+.contactame {
+    font-size: 36px;
+    color: $primary;
     font-family: $font-principal;
 }
+.contactame-uno {
+    font-size: 36px;
+    color: $primary;
+    font-family: $font-principal;
+    
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to left, pink, #7B68EE,#FFBDE7, purple, pink);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+    @keyframes color {
+        from {
+            background-position: 0% 50%;
+        }
+        to {
+            background-position: 100% 50%;
+        }
+    }
+}
+
+.cuadro {
+    background-color:map-get($backgraund-color,secundary);
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.margin {
+    border-color: aqua;
+}
+/*Media quieres sobre mi 273 a 420*/
+@media (min-width: 273px)  and (max-width: 420px){
+    .intro-conoceme {
+        h1 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 20px;
+            margin: 0%;
+        }
+        p {
+            font-size: $text-large;
+        }
+        }
+        .title-service {
+            margin-left: -30%;
+        }
+    }
+/*Media quieres sobre mi 420 a 500*/
+    @media (min-width: 420px)  and (max-width: 500px){
+        .intro-conoceme {
+            h1 {
+                font-size: 30px;
+            }
+            h4 {
+                font-size: 19px;
+            }
+            p {
+                font-size: 15px;
+            }
+            }
+        .intro-conoceme {
+            h1 {
+                font-size: 40px;
+            }
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 20px;
+            }
+            }
+    }
+    @media (min-width: 500px)  and (max-width: 767px){
+        .intro-conoceme {
+            h1 {
+                font-size: 38px;
+            }
+            h4 {
+                font-size: 19px;
+            }
+            p {
+                font-size: 15px;
+            }
+            }
+        .sobre {
+            margin-left: 19%;
+        }
+        .margin {
+            margin-left: 13%;
+        }
+    }
+    @media (min-width: 767px)  and (max-width: 810px){
+        .intro-conoceme {
+            h1 {
+                font-size: 39px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            p {
+                font-size: $text-small;
+            }
+            }
+        .sobre {
+            margin-left: 34%;
+        }
+        .margin {
+            margin-left: 10%;
+        }
+
+    }
+/*Media quieres sobre mi 810 a 992*/
+    @media (min-width: 810px)  and (max-width: 992px){
+        .intro-conoceme {
+            h1 {
+                font-size: 40px;
+            }
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 20px;
+            }
+            }
+        .sobre {
+            margin-left: 33%;
+        }
+        .margin {
+            margin-left: 13%;
+        }
+    }
+    @media (min-width: 993px)  and (max-width: 1200px){
+        .intro-conoceme {
+            h1 {
+                font-size: 40px;
+            }
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 20px;
+            }
+            }
+        .sobre {
+            margin-left: 39%;
+        }
+        .margin {
+            margin-left: 11%;
+        }
+    }
+    @media (min-width: 1200px)  and (max-width:2000px){
+        .sobre {
+            margin-left: 33%;
+        }
+        .margin {
+            margin-left: $text-large;
+        }
+    }
