@@ -62,12 +62,13 @@ footer {
   color: #ffffff;
   padding-top: 3%;
   font-size: 14px;
+  padding-left: 9%;
   background-image: linear-gradient(180deg, #660080, #ff8df3); }
   footer__logo {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    margin-left: 11%; }
+    margin-left: 18%; }
   footer__contacto {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -89,11 +90,45 @@ footer {
     grid-column: span 3;
     height: 5px;
     margin-left: 75%;
+    transform: translateX(8000%);
     color: var(black);
     font-family: var("poppins", sans-serif);
     font-size: 13px; }
 
 @media screen and (max-width: 420px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 170px 170px 120px 50px; }
+  .footer__logo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 8%;
+    margin-left: 25%; }
+  .footer__contacto {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 10px;
+    margin-left: 30%; }
+  .footer__redes {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 10px;
+    margin-left: 130px; }
+  .footer__copyright {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: span 3;
+    margin-left: 5%;
+    font-size: 10px; } }
+
+@media (min-width: 420px) and (max-width: 820px) {
   footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -443,12 +478,12 @@ footer {
 @media (min-width: 599px) and (max-width: 749px) {
   #main-index {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 260px 40px 20px 150px; }
+    grid-template-rows: 260px 40px  550px; }
   .divider {
     grid-column: span 6;
     height: 250px;
-    width: 90%;
-    margin-left: 30px;
+    width: 76%;
+    margin-left: 40px;
     padding: 20px; }
     .divider__text {
       font-size: 14px;
@@ -461,34 +496,36 @@ footer {
     height: 159px;
     width: 70%;
     font-size: 14px;
-    transform: translateX(89px) translateY(-30px); }
+    transform: translateX(49px) translateY(-30px); }
     .profile h2 {
       font-size: 15px; }
   .title__fondo {
     grid-column-start: 1;
-    transform: translateX(-18%) translateY(-90%); }
+    transform: translateX(-26%) translateY(-571%); }
     .title__fondo h3 {
       font-size: 1px;
       width: 175px;
       font-size: 18px; }
   .services {
-    transform: translateY(-19%); }
+    width: 500px;
+    height: 500px;
+    transform: translateX(8%) translateY(-110%); }
     .services div {
       align-items: center;
-      margin-left: 29%;
-      height: 70px;
-      width: 70px; }
+      margin-left: 30%; }
+  .uno {
+    margin-top: 2%; }
   .dos {
-    margin-top: 13%; }
+    margin-top: -8%; }
   .tres {
     padding-top: 1px;
-    margin-top: 15%; }
+    margin-top: 1%; }
   .cuatro {
     padding-top: 1px;
-    margin-top: 15%; }
+    margin-top: 1%; }
   .cinco {
     padding-top: 1px;
-    margin-top: 15%; }
+    margin-top: 1%; }
   .box-service h2 {
     font-size: 13px;
     transform: translateX(40px); } }
@@ -496,7 +533,7 @@ footer {
 @media (min-width: 750px) and (max-width: 800px) {
   #main-index {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 260px 40px 20px 150px; }
+    grid-template-rows: 260px 40px 20px 350px; }
   .divider {
     grid-column: span 6;
     height: 250px;
@@ -519,16 +556,17 @@ footer {
       font-size: 15px; }
   .title__fondo {
     grid-column-start: 1;
-    transform: translateX(-7%) translateY(-90%); }
+    transform: translateX(-7%) translateY(-275%); }
     .title__fondo h3 {
       font-size: 1px;
       width: 175px;
       font-size: 18px; }
   .services {
-    transform: translateY(-19%); }
+    width: 500px;
+    height: 500px;
+    transform: translateX(43%) translateY(-64%); }
     .services div {
       align-items: center;
-      margin-left: 32%;
       height: 70px;
       width: 70%; }
   .dos {
@@ -541,7 +579,8 @@ footer {
     margin-top: 15%; }
   .cinco {
     padding-top: 1px;
-    margin-top: 15%; }
+    margin-top: 15%;
+    margin-block-end: 15%; }
   .box-service h2 {
     font-size: 13px;
     transform: translateX(40px); } }
@@ -580,6 +619,9 @@ footer {
   .services {
     transform: translateY(-19%); }
     .services div {
+      width: 500px;
+      height: 500px;
+      transform: translateX(8%) translateY(-35%);
       align-items: center;
       margin-left: 32%;
       height: 70px;
@@ -596,8 +638,7 @@ footer {
     padding-top: 1px;
     margin-top: 15%; }
   .box-service h2 {
-    font-size: 13px;
-    transform: translateX(40px); } }
+    font-size: 13px; } }
 
 @media (min-width: 900px) and (max-width: 1199px) {
   #main-index {
@@ -654,6 +695,7 @@ footer {
 
 @media (min-width: 1200px) {
   .services {
+    margin-left: 2%;
     display: flex;
     justify-content: center;
     align-items: center; } }
@@ -767,9 +809,11 @@ footer {
   .intro-conoceme p {
     font-size: 15px; }
   .sobre {
-    margin-left: 19%; }
+    margin-left: 17%; }
   .margin {
-    margin-left: 13%; } }
+    margin-left: 12%; }
+  .contactame-uno {
+    width: 80%; } }
 
 @media (min-width: 767px) and (max-width: 810px) {
   .intro-conoceme h1 {
@@ -1656,33 +1700,33 @@ footer {
     margin-left: 11%;
     width: 85%; }
     .title-animado h3 {
-      font-size: 27px; }
+      font-size: 29px; }
   .img-1, .img-2, .img-3 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column: span 1;
-    margin-left: 3%; }
+    margin-left: 4%; }
   .img-2 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column: span 1;
-    margin-left: 3%; }
+    margin-left: 4%; }
   .img-3 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column: span 1;
-    margin-left: 3%; }
+    margin-left: 4%; }
   .img-4, .img-5, .img-6 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column: span 1;
-    margin-left: 3%; }
+    margin-left: 4%; }
   .img-5 {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column: span 1;
     margin-top: 8%;
-    margin-left: 3%; }
+    margin-left: 4%; }
   .img-6 {
     grid-row-start: 7;
     grid-row-end: 8;
@@ -2056,7 +2100,8 @@ footer {
     grid-row-start: 1;
     grid-row-end: 2;
     margin-left: 80%;
-    width: 85%; }
+    width: 85%;
+    margin-block-end: 10%; }
   .img-1, .img-2, .img-3 {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -2123,6 +2168,88 @@ footer {
     .articulos__tres {
       width: 150px;
       margin-left: -487%;
+      margin-top: -4%; } }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .main__blog {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto); }
+    .main__blog div h2 {
+      font-size: 18px; }
+    .main__blog div p {
+      font-size: 13px; }
+  .title-animado {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 102%;
+    width: 85%;
+    margin-block-end: 8%; }
+  .img-1, .img-2, .img-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 1;
+    margin-left: -19%;
+    height: 435px;
+    width: 350px; }
+  .img-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 1;
+    margin-left: -29%;
+    height: 435px;
+    width: 350px; }
+  .img-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: span 1;
+    margin-left: -38%;
+    height: 435px;
+    width: 350px; }
+  .img-4, .img-5, .img-6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: span 1;
+    margin-left: -19%;
+    margin-top: 1px;
+    height: 435px;
+    width: 350px; }
+  .img-5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: span 1;
+    margin-left: -29%;
+    height: 435px;
+    width: 350px; }
+  .img-6 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: span 1;
+    margin-left: -38%;
+    height: 435px;
+    width: 350px; }
+  .inter {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: span 6;
+    margin-left: 21%;
+    height: 100px;
+    width: 355px;
+    margin-top: 4%; }
+  .articulos {
+    grid-column: span 1; }
+    .articulos__uno, .articulos__dos, .articulos__tres {
+      margin-top: 4%;
+      width: 150px;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column: span 2;
+      margin-left: 5; }
+    .articulos__dos {
+      width: 150px;
+      margin-left: -122%; }
+    .articulos__tres {
+      width: 150px;
+      margin-left: -420%;
       margin-top: -4%; } }
 
 @media (min-width: 1900px) {

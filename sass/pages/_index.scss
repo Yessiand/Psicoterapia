@@ -379,13 +379,13 @@ h3 {
 @media (min-width: 599px) and (max-width: 749px) {
     #main-index {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 260px 40px 20px 150px;
+        grid-template-rows: 260px 40px  550px;
     }
     .divider {
         grid-column: span 6;
         height: 250px;
-        width: 90%;
-        margin-left: 30px;
+        width: 76%;
+        margin-left: 40px;
         padding: 20px;
         &__text {
             font-size: 14px;
@@ -400,14 +400,14 @@ h3 {
         height: 159px;
         width: 70%;
         font-size: 14px;
-        transform: translateX(89px) translateY(-30px);
+        transform: translateX(49px) translateY(-30px);
         h2 {
             font-size: 15px;
         }
     }
     .title__fondo {
         grid-column-start: 1;
-        transform: translateX(-18%) translateY(-90%);
+        transform: translateX(-26%) translateY(-571%);
         h3 {
             font-size: 1px;
             width: 175px;
@@ -415,28 +415,31 @@ h3 {
         }
     }
     .services {
-        transform: translateY(-19%);
+        width: 500px;
+        height: 500px;
+        transform: translateX(8%) translateY(-110%);
         div {
             align-items: center;
-            margin-left: 29%;
-            height: 70px;
-            width: 70px;
+            margin-left: 30%;
         }
     }
+    .uno {
+        margin-top: 2%;
+    }
     .dos {
-        margin-top: 13%;
+        margin-top: -8%;
     }
     .tres {
         padding-top: 1px;
-        margin-top: 15%;
+        margin-top: 1%;
     }
     .cuatro {
         padding-top: 1px;
-        margin-top: 15%;
+        margin-top: 1%;
     }
     .cinco {
         padding-top: 1px;
-        margin-top: 15%;
+        margin-top: 1%;
     }
     .box-service {
         h2 {
@@ -449,7 +452,7 @@ h3 {
 @media (min-width: 750px) and (max-width: 800px) {
     #main-index {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 260px 40px 20px 150px;
+        grid-template-rows: 260px 40px 20px 350px;
     }
     .divider {
         grid-column: span 6;
@@ -475,7 +478,7 @@ h3 {
     }
     .title__fondo {
         grid-column-start: 1;
-        transform: translateX(-7%) translateY(-90%);
+        transform: translateX(-7%) translateY(-275%);
         h3 {
             font-size: 1px;
             width: 175px;
@@ -483,10 +486,12 @@ h3 {
         }
     }
     .services {
-        transform: translateY(-19%);
+        width: 500px;
+        height: 500px;
+        transform: translateX(43%) translateY(-64%);
         div {
             align-items: center;
-            margin-left: 32%;
+            
             @include tamanios(70px,70%);
         }
     }
@@ -504,6 +509,7 @@ h3 {
     .cinco {
         padding-top: 1px;
         margin-top: 15%;
+        margin-block-end: 15%;
     }
     .box-service {
         h2 {
@@ -552,6 +558,9 @@ h3 {
     .services {
         transform: translateY(-19%);
         div {
+            width: 500px;
+            height: 500px;
+            transform: translateX(8%) translateY(-35%);
             align-items: center;
             margin-left: 32%;
             @include tamanios(70px,70px);
@@ -575,7 +584,6 @@ h3 {
     .box-service {
         h2 {
             font-size: 13px;
-            transform: translateX(40px);
         }
     }
 }
@@ -649,6 +657,9 @@ h3 {
 //Media 1200 index//
 @media (min-width: 1200px) {
     .services {
+        margin-left: 2%;
         @include flex (flex, null, center, center);
+        
+
     }
 }
